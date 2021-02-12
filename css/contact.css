@@ -1,0 +1,58 @@
+.contact-main{
+    height: 100vh;
+    width: 100%;
+    background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../images/wallpaper2.jpg") fixed center repeat;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-main .contact-container{
+    height: 70%;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.226);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form input{
+    width: 90%;
+    padding: 12px;
+    outline: none;
+}
+form textarea{
+    height: 30%;
+    padding: 8px 12px;
+    width: 90%;
+    resize: none;
+    outline: none;
+
+}
+.btns{
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.btns button{
+    padding: 6px 12px;
+    color: crimson;
+}
+
+@media screen and (max-width:768px){
+    .contact-main .contact-container{
+        height: 70%;
+        width: 90%;
+    }
+}

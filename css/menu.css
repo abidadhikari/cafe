@@ -1,0 +1,73 @@
+.menu-container{
+    padding: 15vh 10%;
+    background-color: coral;
+    height: auto;
+    background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../images/wallpaper2.jpg") fixed center repeat;
+}
+
+/* https://www.wallpapertip.com/wmimgs/244-2446642_coffee-beans.jpg */
+
+.menu-title h2{
+    text-align: center;
+    color: cornsilk;
+    padding: 1rem;
+    border: 2px solid cornsilk;
+    border-radius: 20px 0 20px 0;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.226);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.menu-items{
+    height:auto;
+    padding: 16px;
+    border-radius: 20px 0 20px 0;
+    background-color: cornsilk;
+    background: rgba(255, 255, 255, 0.226);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.menu-items{
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.menu-item{
+    height: 280px;
+    display: flex;
+    padding: 12px;
+    background: rgba(197, 68, 68, 0.226);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+}
+.menu-item .img img{
+    height:200px ;
+    width:200px;
+    border-radius: 50%;
+}
+.menu-item .txt{
+    text-transform: uppercase;
+    text-align: center;
+    color: cornsilk;
+    width: 90%;
+}
+
+@media screen and (max-width:768px){
+    .menu-items{
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr;
+    }
+    .menu-item{
+        flex-direction: column;
+
+    }
+}
